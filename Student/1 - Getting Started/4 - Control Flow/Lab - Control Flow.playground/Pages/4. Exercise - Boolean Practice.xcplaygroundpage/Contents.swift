@@ -21,9 +21,9 @@ if hasFish == hasVegan {
 let temp = 82
 let isRaining = true
 let isSunny = true
-let isNiceWeather = 
-if isNiceWeather > 82 {
-    print("I'm gound for a walk!")
+let isNiceWeather = temp
+if isNiceWeather < 82 {
+    print("I'm going for a walk!")
 }
 /*:
 [Previous](@previous)  |  page 4 of 9  |  [Next: App Exercise - Target Heart Rate](@next)
