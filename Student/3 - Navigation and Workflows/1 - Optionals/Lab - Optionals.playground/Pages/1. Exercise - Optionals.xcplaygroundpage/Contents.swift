@@ -20,8 +20,10 @@ print("Because we set the value to 34e and thats a string so it cant convert it"
 print(userAge)
 
 //:  Now use optional binding to unwrap `userAge`. If `userAge` has a value, print it to the console.
-
-
+if let userAge = userAge {
+    print(userAge)
+}
+print(userAge)
 /*:
 page 1 of 6  |  [Next: App Exercise - Finding a Heart Rate](@next)
  */
