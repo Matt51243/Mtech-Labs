@@ -33,11 +33,6 @@ struct SwimmingWorkout {
     }
 }
 
-let workout = SwimmingWorkout(distance: 2.3, time: 123.5, stroke: .breaststroke)
-workout.save()
-
-let workout2 = SwimmingWorkout(distance: 4.0, time: 3.4, stroke: .freestyle)
-workout2.save()
 //:  Allowing `stroke` to be of type `String` isn't very type-safe. Inside the `SwimmingWorkout` struct, create an enum called `Stroke` that has cases for `freestyle`, `butterfly`, `backstroke`, and `breaststroke`. Change the type of `stroke` from `String` to `Stroke`. Create two instances of `SwimmingWorkout` objects.
 SwimmingWorkout(distance: 1234.3, time: 1.2, stroke: .backstroke)
 SwimmingWorkout(distance: 2.2, time: 0.1, stroke: .freestyle)
@@ -46,6 +41,11 @@ SwimmingWorkout(distance: 2.2, time: 0.1, stroke: .freestyle)
 
 //:  Now add an instance method to `SwimmingWorkout` called `save` that takes no parameters and has no return value. This method will add its instance to the static array on `SwimmingWorkout` that corresponds to its swimming stroke. Inside `save` write a switch statement that switches on the instance's `stroke` property, and appends `self` to the proper array. Call save on the two instances of `SwimmingWorkout` that you created above, and then print the array(s) to which they should have been added to see if your `save()` method works properly.
 
+let workout = SwimmingWorkout(distance: 2.3, time: 123.5, stroke: .breaststroke)
+workout.save()
+
+let workout2 = SwimmingWorkout(distance: 4.0, time: 3.4, stroke: .freestyle)
+workout2.save()
 
 /*:
  _Copyright © 2021 Apple Inc._

@@ -31,6 +31,7 @@
                                 <state key="normal" title="Forgot Password"/>
                                 <connections>
                                     <action selector="forgotPasswordAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YSp-ED-pll"/>
+                                    <segue destination="HIO-Ob-0Zz" kind="show" identifier="forgotPassword" id="uwP-Gn-H0l"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Is-qO-2yZ">
@@ -38,14 +39,14 @@
                                 <state key="normal" title="Forgot UserName"/>
                                 <connections>
                                     <action selector="forgotUsernameAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r4s-Fp-2ct"/>
+                                    <segue destination="HIO-Ob-0Zz" kind="show" identifier="forgotUsername" id="qBE-rY-ONt"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XOo-Im-ACZ">
                                 <rect key="frame" x="186" y="513" width="42" height="30"/>
                                 <state key="normal" title="Log in"/>
                                 <connections>
-                                    <action selector="LoginButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Juh-o2-9QC"/>
-                                    <segue destination="HIO-Ob-0Zz" kind="show" id="LCI-0I-vGn"/>
+                                    <segue destination="HIO-Ob-0Zz" kind="show" id="h1x-yq-yJU"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -72,12 +73,11 @@
                         <outlet property="UsernameTextField" destination="vzi-Y2-xyn" id="Z25-gb-yQ7"/>
                         <outlet property="forgotPassword" destination="0xn-d3-Dzs" id="KRA-wP-Qms"/>
                         <outlet property="forgotUsername" destination="4Is-qO-2yZ" id="t3Y-Y1-P4A"/>
-                        <segue destination="HIO-Ob-0Zz" kind="show" id="V8a-qS-D0Q"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1050.7246376811595" y="118.52678571428571"/>
+            <point key="canvasLocation" x="1165" y="119"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="nfe-mh-ZZM">
@@ -93,7 +93,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Eng-1D-Suc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1757" y="119"/>
+            <point key="canvasLocation" x="1946" y="119"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="9bz-jT-tvI">
@@ -115,7 +115,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="V8a-qS-D0Q"/>
+        <segue reference="uwP-Gn-H0l"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
